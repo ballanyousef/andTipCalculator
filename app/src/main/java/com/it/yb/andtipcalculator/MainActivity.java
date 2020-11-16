@@ -11,7 +11,7 @@ import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.it.yb.bll.Calculator;
+
 
 
 public class MainActivity extends Activity {
@@ -33,7 +33,7 @@ private EditText tipCustomEditText; // custom tip
 private EditText totalCustomEditText; // total custom tip
 private SeekBar customSeekBar;
 
-Calculator mCalc=new Calculator(0.10,0.15,0.30,0.18);
+
 
 @Override
 public void onCreate(Bundle savedInstanceState) {
@@ -117,8 +117,6 @@ private TextWatcher billEditTextWatcher = new TextWatcher() {
 
 public void onTextChanged(CharSequence s, int start, int before,
         int count) {
-
-        Toast.makeText(MainActivity.this, mCalc.toString(), Toast.LENGTH_SHORT).show();
 
 
          try {
